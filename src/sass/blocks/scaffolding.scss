@@ -1,0 +1,27 @@
+body {
+  margin: 0 auto;
+  width: 1000px;
+  padding-bottom: 70px;
+  color: #1F1E25;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes load {
+  from{
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+  12.5% {transform: rotate(45deg)}
+  25% {transform: rotate(90deg)}
+  50% {transform: rotate(180deg)}
+  75% {transform: rotate(270deg)}
+  87.5% {transform: rotate(315deg)}
+}

@@ -1,0 +1,131 @@
+.users__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.users__search {
+  width: 250px;
+  height: 20px;
+}
+
+.users__overlay-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.users__add-user {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 600px;
+  padding: 30px 50px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.users__close-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::after {
+    content: "+";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+  }
+}
+
+.users__label {
+  display: block;
+  width: 40%;
+  margin-bottom: 20px;
+
+  div {
+    margin-bottom: 5px;
+  }
+
+  input {
+    height: 20px;
+  }
+}
+
+.users__submit-btn {
+  width: 100%;
+  height: 30px;
+  margin: 10px 30% 0 30%;
+}
+
+.users__table {
+  width: 100%;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  border: 1px solid #000;
+
+  th, td {
+    border: 1px solid #000;
+  }
+}
+
+.users__head-item {
+  position: relative;
+  padding: 2px 20px 2px 5px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.users__sort-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+}
+
+.users__item {
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.users__pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.users__pagination-link {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 28px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.users__textarea {
+  width: 500px;
+  height: 100px;
+  resize: none;
+}
